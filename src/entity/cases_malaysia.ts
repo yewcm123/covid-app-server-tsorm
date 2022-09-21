@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm"
 
 
+
 @Entity('cases_malaysia')
 export class cases_malaysia extends BaseEntity {
 

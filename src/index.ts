@@ -1,9 +1,10 @@
+import { deaths_malaysia } from './entity/deaths_malaysia';
 import { CovidDataSource } from "./data-source"
-import { User } from "./entity/User"
+import { cases_malaysia } from "./entity/cases_malaysia"
+
 
 CovidDataSource.initialize().then(async () => {
 
-    
     // console.log("Inserting a new user into the database...")
     // const user = new User()
     // user.firstName = "Timber"

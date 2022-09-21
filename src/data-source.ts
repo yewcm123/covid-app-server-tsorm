@@ -1,6 +1,8 @@
+import { deaths_malaysia } from './entity/deaths_malaysia';
+import { cases_malaysia } from './entity/cases_malaysia';
 import "reflect-metadata"
 import { DataSource } from "typeorm"
-import { User } from "./entity/User"
+
 
 export const CovidDataSource = new DataSource({
     type: "mysql",
@@ -11,7 +13,7 @@ export const CovidDataSource = new DataSource({
     database: "covid_db",
     synchronize: true,
     logging: false,
-    entities: [User],
+    entities: [cases_malaysia, deaths_malaysia],
     migrations: [],
     subscribers: [],
 })
